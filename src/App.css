@@ -1,5 +1,17 @@
-*
-{
+*{
+  margin: 0;
+  padding: 0;
+}
 
-margin: 0;
-padding: 0;}
+body{
+  background-color: #f7f7f7;
+  font-family: 'lato';
+}
+
+.Container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 800px;
+}

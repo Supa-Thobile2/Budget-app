@@ -1,12 +1,10 @@
-import logo from './logo.svg';
 import './App.css';
-import AddItem from './components/aditem'
+import AddItems from './components/additem'
 
 function App() {
   return (
-    <div className="App">
-      <AddItem/>
-      
+    <div className="Container">
+        <AddItems/>
     </div>
   );
 }
