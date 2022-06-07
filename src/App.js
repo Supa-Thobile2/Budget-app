@@ -1,10 +1,23 @@
-import './App.css';
+import './App.css'
+import React, {useState} from 'react'
 import AddItems from './components/additem'
 
 function App() {
+
+  const [transaction, setTransaction] = useState ([])
+
+  const addTransaction = ((amount, item, transactionType)=>{
+      setTransaction((item)=>[...item], {
+        amount:amount,
+        item:item,
+        transactionType:transactionType
+      })
+  })
+
+  
   return (
     <div className="Container">
-        <AddItems/>
+        <AddItems  add = {addTransaction}/>
     </div>
   );
 }
