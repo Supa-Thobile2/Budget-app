@@ -1,6 +1,8 @@
 import './App.css'
 import React, {useState} from 'react'
 import AddItems from './components/additem'
+import DisplayTransaction from './components/DispalyTransaction'
+
 
 function App() {
 
@@ -12,11 +14,13 @@ function App() {
         item:item,
         transactionType:transactionType
       })
+      
   })
 
   
   return (
     <div className="Container">
+        <DisplayTransaction list = {transaction}/>
         <AddItems  add = {addTransaction}/>
     </div>
   );
