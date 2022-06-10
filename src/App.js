@@ -22,22 +22,22 @@ function App() {
 
   
   return (
-    <Router>
-      <Switch>
-        <Route path="/" component={Login}>
+          <Router>
+            <Switch>
+              <Route path="/" component={Login}>
 
-        </Route>
-        <Route path="/sign-up" component={SignUp}>
+              </Route>
+              <Route path="/sign-up" component={SignUp}>
 
-        </Route>
-        <Route path="/home">
+              </Route>
+              <Route path="/home">
 
-        </Route>
-      </Switch>
-      <Home list= {transaction} add= {addTransaction}/>
-    </Router>
+              </Route>
+            </Switch>
+            <Home list= {transaction} add= {addTransaction}/>
+          </Router>
     
-  );
+  )
 }
 
 export default App;
