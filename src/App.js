@@ -1,7 +1,7 @@
 import './App.css'
 import React, {useState} from 'react'
 import AddItems from './components/additem'
-import DisplayTransaction from './components/DispalyTransaction'
+import DisplayTransaction from './components/DisplayTransaction'
 
 
 function App() {
