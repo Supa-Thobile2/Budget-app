@@ -1,7 +1,10 @@
 import './App.css'
 import React, {useState} from 'react'
-import AddItems from './components/additem'
-import DisplayTransaction from './components/DisplayTransaction'
+
+import Home from './components/home'
+import Login from './components/login'
+import SignUp from './components/signup'
+import {BrowserRouter as Router , Switch , Route} from 'react'
 
 
 function App() {
@@ -19,10 +22,15 @@ function App() {
 
   
   return (
-    <div className="Container">
-        <DisplayTransaction list = {transaction}/>
-        <AddItems  add = {addTransaction}/>
-    </div>
+    <Router>
+      <Switch>
+        <Route path="/" component={Login}></Route>
+        <Route path="/sign-up" component={SignUp}></Route>
+        <Route path="/home"></Route>
+      </Switch>
+      <Home list = {transaction} add = {addTransaction}/>
+    </Router>
+    
   );
 }
 
