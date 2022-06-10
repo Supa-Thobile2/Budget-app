@@ -4,7 +4,7 @@ import React, {useState} from 'react'
 import Home from './components/home'
 import Login from './components/login'
 import SignUp from './components/signup'
-import {BrowserRouter as Router , Switch , Route} from 'react'
+import {BrowserRouter as Router, Switch, Route} from 'react'
 
 
 function App() {
@@ -24,11 +24,17 @@ function App() {
   return (
     <Router>
       <Switch>
-        <Route path="/" component={Login}></Route>
-        <Route path="/sign-up" component={SignUp}></Route>
-        <Route path="/home"></Route>
+        <Route path="/" component={Login}>
+
+        </Route>
+        <Route path="/sign-up" component={SignUp}>
+
+        </Route>
+        <Route path="/home">
+
+        </Route>
       </Switch>
-      <Home list = {transaction} add = {addTransaction}/>
+      <Home list= {transaction} add= {addTransaction}/>
     </Router>
     
   );

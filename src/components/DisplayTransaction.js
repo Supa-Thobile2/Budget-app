@@ -42,5 +42,4 @@ function DisplayTransaction(props){
     )
 }
 
-
 export default DisplayTransaction
